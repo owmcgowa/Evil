@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etSuperheroName"
+        android:hint="Superhero Name" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/rbSuperMale"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rbSuperFemale"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Pick 3 Super Powers"
+            android:id="@+id/tvSuperPowers"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fire Manipulation"
+            android:id="@+id/cbFire"
+            android:checked="false"
+            android:layout_below="@+id/cbDuplication"
+            android:layout_alignLeft="@+id/cbDuplication"
+            android:layout_alignStart="@+id/cbDuplication" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight"
+            android:id="@+id/cbFlight"
+            android:checked="false"
+            android:layout_below="@+id/cbFire"
+            android:layout_alignLeft="@+id/cbFire"
+            android:layout_alignStart="@+id/cbFire" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duplication"
+            android:id="@+id/cbDuplication"
+            android:checked="false"
+            android:layout_below="@+id/tvSuperPowers"
+            android:layout_toLeftOf="@+id/cbTelekenesis"
+            android:layout_toStartOf="@+id/cbTelekenesis" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invisibility"
+            android:id="@+id/cbInvisibility"
+            android:checked="false"
+            android:layout_below="@+id/cbFlight"
+            android:layout_alignLeft="@+id/cbFlight"
+            android:layout_alignStart="@+id/cbFlight" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shapeshifting"
+            android:id="@+id/cbShapeshifting"
+            android:checked="false"
+            android:layout_above="@+id/cbSuperSpeed"
+            android:layout_toRightOf="@+id/cbTelekenesis"
+            android:layout_toEndOf="@+id/cbTelekenesis" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super Speed"
+            android:id="@+id/cbSuperSpeed"
+            android:checked="false"
+            android:layout_above="@+id/cbSuperStrength"
+            android:layout_alignLeft="@+id/cbShapeshifting"
+            android:layout_alignStart="@+id/cbShapeshifting" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super Strength"
+            android:id="@+id/cbSuperStrength"
+            android:checked="false"
+            android:layout_above="@+id/cbInvisibility"
+            android:layout_alignLeft="@+id/cbSuperSpeed"
+            android:layout_alignStart="@+id/cbSuperSpeed" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telekenesis"
+            android:id="@+id/cbTelekenesis"
+            android:checked="false"
+            android:layout_below="@+id/cbInvisibility"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telepathy"
+            android:id="@+id/cbTelepathy"
+            android:checked="false"
+            android:layout_above="@+id/cbTelekenesis"
+            android:layout_toRightOf="@+id/cbTelekenesis"
+            android:layout_toEndOf="@+id/cbTelekenesis" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Superhero"
+        android:id="@+id/bCreateSuperhero"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
