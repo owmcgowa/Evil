@@ -12,7 +12,7 @@ $weight = $_GET['weight'];
 $height = $_GET['height'];
 
 
-if($first == '' || $last == '' || $email == '' || $superusername == ''|| $superpassword == '' || $birthday == '' || $male == '' || $female == '' || $other == '' || $weight == '' || $height == ''){
+if($first == '' || $last == '' || $email == '' || $superusername == '' || $superpassword == '' || $birthday == '' || $male == '' || $female == '' || $other == '' || $weight == '' || $height == ''){
 	echo 'please fill all values';
 }else{
 	require_once('dbConnect.php');
